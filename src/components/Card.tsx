@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { documentImages, FALLBACK_IMAGE } from "../utils";
 import { DataItem } from "../types/types";
 
-interface DataCardProps {
+interface CardProps {
   item: DataItem;
 }
 
-export const Card = ({ item }: DataCardProps) => {
+export const Card = ({ item }: CardProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleImageLoad = () => {
