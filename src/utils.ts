@@ -1,5 +1,3 @@
-
-  
   export const documentImages: Record<string, string> = {
     "cat_1": "/images/cat1.jpg",
     "cat_2": "/images/cat3.jpg",
@@ -8,3 +6,4 @@
     "cat_5": "/images/cat5.jpg"
   };
   
+  export const FALLBACK_IMAGE =  "/images/cat1.jpg";

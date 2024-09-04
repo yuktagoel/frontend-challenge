@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { documentImages } from "../utils";
+import { documentImages, FALLBACK_IMAGE } from "../utils";
 import { DataItem } from "../types/types";
 
 interface DataCardProps {
@@ -25,7 +25,7 @@ export const Card = ({ item }: DataCardProps) => {
         </div>
         <div style={{ display: !isLoading ? "flex" : "none" }}>
           <img
-            src={documentImages[item.id]}
+            src={documentImages[item.id] ?? FALLBACK_IMAGE}
             alt="placeholder"
             onLoad={handleImageLoad}
           />
