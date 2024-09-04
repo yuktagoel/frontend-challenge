@@ -10,7 +10,7 @@ export const useFetchData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data.json');
+        const response = await fetch('https://api.com/documents');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
