@@ -1,10 +1,10 @@
 
   
   export const documentImages: Record<string, string> = {
-    "bank-draft": "/images/cat1.jpg",
-    "bill-of-lading": "/images/cat2.jpg",
-    "invoice": "/images/cat3.jpg",
-    "bank-draft-2": "/images/cat4.jpg",
-    "bill-of-lading-2": "/images/cat5.jpg"
+    "cat_1": "/images/cat1.jpg",
+    "cat_2": "/images/cat3.jpg",
+    "cat_3": "/images/cat4.jpg",
+    "cat_4": "/images/cat2.jpg",
+    "cat_5": "/images/cat5.jpg"
   };
   

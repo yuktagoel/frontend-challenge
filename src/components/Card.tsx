@@ -25,7 +25,7 @@ export const Card = ({ item }: DataCardProps) => {
         </div>
         <div style={{ display: !isLoading ? "flex" : "none" }}>
           <img
-            src={documentImages[item.type]}
+            src={documentImages[item.id]}
             alt="placeholder"
             onLoad={handleImageLoad}
           />
