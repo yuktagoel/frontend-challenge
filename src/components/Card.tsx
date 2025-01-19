@@ -29,8 +29,6 @@ export const Card = ({ item, moveCard, setClickedCard }: CardProps) => {
     accept: "CARD",
     hover(draggedItem: { id: string; index: number }) {
       if (draggedItem.index !== index) {
-        console.log("dragged", draggedItem.id);
-        console.log("current", item.id, item.position);
         moveCard(draggedItem.index, index);
         draggedItem.index = index;
       }
@@ -48,7 +46,7 @@ export const Card = ({ item, moveCard, setClickedCard }: CardProps) => {
       className="card"
       style={{
         opacity: isDragging ? 0.5 : 1,
-        cursor: "move",
+        cursor: "pointer",
       }}
     >
       <span>{item.title}</span>

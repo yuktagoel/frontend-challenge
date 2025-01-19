@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap; 
     gap: 16px; 
+
   }
 
 .blur-container {
@@ -10,6 +11,18 @@
     flex-wrap: wrap; 
     gap: 16px; 
     filter: blur(3px);
+  }
+  .container {
+    position: relative; 
+    height: 100vh;
+  }
+  
+  .card-modal {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .data-card {
