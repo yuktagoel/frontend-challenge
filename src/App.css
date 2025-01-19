@@ -4,6 +4,13 @@
     flex-wrap: wrap; 
     gap: 16px; 
   }
+
+.blur-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px; 
+    filter: blur(3px);
+  }
   
   .data-card {
     flex: 1 1 calc(33.33% - 16px);

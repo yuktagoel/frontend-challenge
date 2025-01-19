@@ -6,9 +6,10 @@ import { useDrag, useDrop } from "react-dnd";
 interface CardProps {
   item: DataItem;
   moveCard: (dragIndex: number, hoverIndex: number) => void;
+  setClickedCard: (item: DataItem) => any;
 }
 
-export const Card = ({ item, moveCard }: CardProps) => {
+export const Card = ({ item, moveCard, setClickedCard }: CardProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const ref = useRef<HTMLDivElement>(null);
   const handleImageLoad = () => {
@@ -40,6 +41,9 @@ export const Card = ({ item, moveCard }: CardProps) => {
 
   return (
     <div
+      onClick={() => {
+        setClickedCard(item);
+      }}
       ref={ref}
       className="card"
       style={{
