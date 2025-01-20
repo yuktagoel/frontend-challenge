@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useFetchData } from "../hooks/useFetchCardData";
 import { Card } from "./Card";
 import { DataItem } from "../types/types";
@@ -10,10 +10,8 @@ export const Container = () => {
   const [clickedItem, setClickedItem] = useState<DataItem | null>(null);
 
   useEffect(() => {
-    if (data) {
-      setCards(data);
-    }
-  }, [data]);
+    setCards(data);
+  }, [loading]);
 
   const moveCard = React.useMemo(() => {
     return (dragIndex: number, hoverIndex: number) => {

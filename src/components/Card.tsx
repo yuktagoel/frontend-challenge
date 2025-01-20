@@ -47,6 +47,7 @@ export const Card = ({ item, moveCard, setClickedCard }: CardProps) => {
       style={{
         opacity: isDragging ? 0.5 : 1,
         cursor: "pointer",
+        transform: "translate(0, 0)",
       }}
     >
       <span>{item.title}</span>
